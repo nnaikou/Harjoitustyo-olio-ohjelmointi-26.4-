@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnListLutemons"
+        android:layout_width="205dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="127dp"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="switchToListLutemonActivity"
+        android:text="Listaa kaikki Lutemonit"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLoadLutemons"
+        android:layout_width="205dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="422dp"
+        android:onClick="loadLutemons"
+        android:text="Lataa Lutemonit kotiin"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSaveLutemons"
+        android:layout_width="205dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="363dp"
+        android:onClick="saveLutemons"
+        android:text="Tallenna kaikki Lutemonit"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnToArena"
+        android:layout_width="205dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="304dp"
+        android:onClick="switchToBattleFieldActivity"
+        android:text="Taisteluareenalle!"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnToTraining"
+        android:layout_width="205dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="245dp"
+        android:onClick="switchToTrainingAreaActivity"
+        android:text="Treenaamaan"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTransferLutemons"
+        android:layout_width="205dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="186dp"
+        android:onClick="switchToTransferLutemonsActivity"
+        android:text="Siirrä Lutemoneja"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnListLutemon"
+        android:layout_width="205dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="68dp"
+        android:onClick="switchToAddLutemonActivity"
+        android:text="Lisää uusi Lutemon"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:includeFontPadding="true"
+        android:text="Tervetuloa pelaamaan LutemonFighteria"
+        android:textColor="#261447"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnListLutemon"
+        app:layout_constraintEnd_toEndOf="@+id/btnListLutemon"
+        app:layout_constraintStart_toStartOf="@+id/btnListLutemon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

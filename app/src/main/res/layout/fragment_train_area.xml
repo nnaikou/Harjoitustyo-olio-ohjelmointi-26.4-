@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.FragmentTrainingArea">
+
+    <Button
+        android:id="@+id/btnMoveLutemonsFromTrainArea"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:text="Siirrä valitut Lutemonit"
+        android:textSize="12sp" />
+
+    <RadioGroup
+        android:id="@+id/rgGroupTrainArea"
+        android:layout_width="155dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center">
+
+        <RadioButton
+            android:id="@+id/rbToHomeFromTrainArea"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="Kotiin" />
+
+        <RadioButton
+            android:id="@+id/rbToBattleFieldfromTrainArea"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="Taisteluareenalle" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtPromptTrainArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Valitse ensin alhaalta haluamasi Lutemonit:"
+        android:textColor="#131313" />
+</LinearLayout>
